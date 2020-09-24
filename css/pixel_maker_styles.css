@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+body {
+  background: #ACB6E5;  /* Fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #86FDE8, #ACB6E5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #86FDE8, #ACB6E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'PT Mono', monospace;
+  text-align: center;
+  margin: 10rem auto;
+  max-width: 500px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+p,
+a {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+a:hover,
+a:focus {
+  background: #FFF;
+  border: 1px dotted #808080;
+  opacity: .9;
+  transition: .3s ease-in;
+}
+#canvas-board {
+  display: table;
+  border: 2px solid #808080;
+  border-image: linear-gradient(to right, #FFFFBA 10%, #FFC6A9 25%, #E89F9F 30%,#BAE1FF 50%, #80E3EF 75%, #D6C4FF 85%) 10;
+  border-spacing: 1px;
+  background-color: #808080;
+  margin: 0 auto;
+}
+.row {
+  display: table-row;
+}
+.pixel {
+  display: table-cell;
+  background-color: #FFF;
+  width: 25px;
+  height: 25px;
+  transition: .22s ease-in;
+}
+.pixel:hover {
+  cursor: pointer;
+}
+#palette {
+  margin: 30px;
+}
+.colour {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #0000008F;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 18px;
+  margin-bottom: 1rem;
+  width: 18px;
+}
+.colour:hover {
+  filter: brightness(85%);
+  transition: .2s ease-in;
+}
+footer {
+  margin: 1.5rem 0;
+}
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 80em) {
+  h1 {
+    font-size: 18px;
+  }
+  p,
+  a {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .pixel {
+    height: 35px;
+    width: 35px;
+	}
+  .colour {
+    height: 35px;
+    width: 35px;
+  }
+}
