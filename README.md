@@ -1,4 +1,4 @@
-# pixel-maker
+# pixel maker 
 
 a little pixel maker created using HTML, CSS and JavaScript.
 
